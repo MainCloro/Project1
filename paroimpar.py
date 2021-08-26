@@ -1,22 +1,22 @@
 repeat = True
 while repeat == True: 
 
-    num = int(input("Dime un numero del 1 al 1000 \n"))
+    num = int(input("Name a number from 1 to 1000 \n"))
 
     while num<1 or num>1000:
-        print("Ese numero no sirve.\nDame otro por favor")
-        num = int(input("Dime un otro numero, que este entre el 1 y el 1000, vale el 1 y el 1000\n"))
+        print("That number is not in the range.\nGive me another one please")
+        num = int(input("Tell me another number, which is between 1 and 1000, it is worth 1 and 1000.\n"))
 
     resultado = num % 2
 
     if resultado == 0:
-        print("El número " + str(num) + " es par")
+        print("The number " + str(num) + " is even")
     else:
-        print("El número " + str(num) + " es impar")
+        print("The number " + str(num) + " is odd")
     
-    respuesta = str(input("Quieres volver a jugar? Si/No\n"))
+    respuesta = str(input("Do you want to play again? Yes/No\n"))
 
-    if respuesta == "Si" or respuesta == "si" or respuesta == "SI" or respuesta == "sI":
+    if respuesta == "yes" or respuesta == "Yes" or respuesta == "YES":
         repeat = True
     else:
         repeat = False
